@@ -3,7 +3,7 @@ const slug = require('mongoose-slug-generator');
 
 mongoose.plugin(slug);
 
-const BuyRequestSchema = new mongoose.Schema(
+const SellRequestSchema = new mongoose.Schema(
 	{
 		name: {
 			type: String,
@@ -46,6 +46,6 @@ const BuyRequestSchema = new mongoose.Schema(
 	}
 );
 
-const BuyRequest = mongoose.model('BuyRequest', BuyRequestSchema);
+const SellRequest = mongoose.model('SellRequest', SellRequestSchema);
 
-module.exports = BuyRequest;
+module.exports = SellRequest;
